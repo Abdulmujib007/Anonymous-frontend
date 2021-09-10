@@ -1,9 +1,10 @@
 /* eslint-disable import/no-anonymous-default-export */
 /* eslint-disable no-unused-vars */
 import axios from 'axios'
-const loginUrl = '/api/login'
-const messageUrl = '/api/messages'
-const userUrl = '/api/user'
+const baseUrl = process.env.REACT_APP_BASEURL
+const loginUrl = `${baseUrl}/api/login`
+const messageUrl = `${baseUrl}/api/messages`
+const userUrl = `${baseUrl}/api/user`
 
 const getAll = async() => {
     const result =  await axios.get(messageUrl)
