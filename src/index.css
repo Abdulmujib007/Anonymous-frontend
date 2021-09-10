@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+
+.input-tag{
+   @apply border-gray-600 border-2 bg-gray-300  rounded-lg text-base p-1
+     pl-1;
+   outline: none;   
+}
+
+
+@tailwind utilities;
