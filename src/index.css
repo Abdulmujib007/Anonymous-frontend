@@ -8,5 +8,11 @@
    outline: none;   
 }
 
+  /* @media only screen and (max-width: 768px) {
+     .first-div {
+      width: ;
+    }
+  }
+ */
 
 @tailwind utilities;

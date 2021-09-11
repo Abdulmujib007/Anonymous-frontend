@@ -1,7 +1,7 @@
 /* eslint-disable no-const-assign */
 import React, { useState } from "react";
 import Fetch from "../helper/Fetch";
-const MessageBox = ({ match }) => {
+const MessageBox = ({ match,history }) => {
   const [text, setText] = useState("");
   const [error, setError] = useState("");
   const handleText = (e) => setText(e.target.value);
@@ -24,8 +24,11 @@ const MessageBox = ({ match }) => {
         });
   };
   const { username } = match.params;
+  const handleSignUp = () => {
+    history.push('/')
+  }
   return (
-    <div className='h-screen w-screen bg-gray-400 flex flex-col pt-20 text-2xl pl-20  '>
+    <div className='h-screen w-screen bg-gray-400 flex flex-col pt-20 text-2xl pl-20 overflow-auto'>
       <p className='text-xl text-green-600'>{error}</p>
       <p className='pb-2 text-purple-800'>messageBox for {username}</p>
       <textarea
@@ -37,6 +40,9 @@ const MessageBox = ({ match }) => {
         placeholder="write a message for ......."
       ></textarea>
       <button className='flex w-14 p-1 rounded-lg text-xl text-center mt-1 outline-none border-2 border-gray-500 bg-purple-600 ' onClick={() => addMore(username)}>send</button>
+      <div className='flex items-center justify-center mt-20'>
+      <button className='border-2 border-gray-500 bg-purple-600 text- text-lg max-w-max rounded-xl p-1' onClick={handleSignUp}>Sign Up</button>
+      </div>
     </div>
   );
 };

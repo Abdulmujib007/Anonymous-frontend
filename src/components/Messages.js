@@ -19,14 +19,26 @@ const Messages = ({ history }) => {
     window.localStorage.clear();
     history.push("/login");
   };
+  // const handleCopy = () => {
+  //     const el = document.createElement('input')
+  //     // el.value = 'https://anonymously.netlify.app/user/' + username
+  //     // el.select()
+  //     // document.execCommand('copy')
+  //     const copy = document.getElementById('linking')
+  //     // copy.textContent.select()
+  //     el.value = copy.textContent
+  //     el.select()
+  //     document.execCommand('copy')
+  //     // document.body.removeChild(el)
+  // }
   return (
-    <div className="flex flex-col text-gray-600 bg-purple-300 text-2xl items-center w-screen h-screen pt-16 overflow-x-auto">
+    <div className=" first-div flex flex-col text-gray-600 bg-purple-300 text-2xl items-center w-screen h-screen pt-16 overflow-x-hidden">
       <h2 className="">{username} logged in</h2>
       <div className="mt-20 pl-10 flex justify-start items-start w-screen">
         copy link to messageBox:
-        <Link className="text-purple-700" to={messagePage}>
+        <span id='linking'className="text-purple-700" to={messagePage}>
         https://anonymously.netlify.app/user/{username}
-        </Link>
+        </span>
       </div>
       <p className="mt-10 w-screen flex justify-start pl-10 ">Your Messages:</p>
       <br />
