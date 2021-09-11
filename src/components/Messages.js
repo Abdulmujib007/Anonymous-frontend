@@ -31,7 +31,7 @@ const Messages = ({ history }) => {
   //     // document.body.removeChild(el)
   // }
   return (
-    <div className=" first-div flex flex-col text-gray-600 bg-purple-300 text-2xl items-center w-screen h-screen pt-16 overflow-x-hidden">
+    <div className=" first-div flex flex-col text-gray-600 bg-purple-300 text-2xl items-center w-screen h-screen pt-16 overflow-auto">
       <h2 className="">{username} logged in</h2>
       <div className="mt-20 pl-10 flex justify-start items-start w-screen">
         copy link to messageBox:
