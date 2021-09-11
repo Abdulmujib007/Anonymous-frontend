@@ -25,7 +25,7 @@ const Messages = ({ history }) => {
       <div className="mt-20 pl-10 flex justify-start items-start w-screen">
         copy link to messageBox:
         <Link className="text-purple-700" to={messagePage}>
-          http://localhost:3000/user/{username}
+        https://anonymously.netlify.app/user/{username}
         </Link>
       </div>
       <p className="mt-10 w-screen flex justify-start pl-10 ">Your Messages:</p>
