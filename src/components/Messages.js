@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Fetch from "../helper/Fetch";
-import { Link } from "react-router-dom";
 
 const Messages = ({ history }) => {
   const [message, setMessage] = useState([]);
