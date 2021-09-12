@@ -7,13 +7,11 @@
      pl-1;
    outline: none;   
 }
-
-  /* @media only screen and (max-width: 768px) {
-     .first-div {
-      width:760px ;
-    }
-
-  } */
-
+.message{
+  max-width: 50%
+}
+.messages{
+  max-width: 40%
+}
 
 @tailwind utilities;

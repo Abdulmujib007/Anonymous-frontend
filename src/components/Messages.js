@@ -31,7 +31,7 @@ const Messages = ({ history }) => {
   //     // document.body.removeChild(el)
   // }
   return (
-    <div className=" first-div flex flex-col text-gray-600 bg-purple-300 text-2xl items-center w-screen h-screen pt-16 overflow-auto">
+    <div className=" first-div flex flex-col text-gray-600 bg-purple-300 text-2xl items-center w-full h-screen pt-16 overflow-auto">
       <h2 className="">{username} logged in</h2>
       <div className="mt-20 pl-10 flex justify-start items-start w-screen">
         copy link to messageBox:
@@ -47,11 +47,11 @@ const Messages = ({ history }) => {
           : message.map((messages, mesInd) => {
               return (
                 <div
-                  className=" w-max flex flex-col justify-start mr-96  p-3 border-gray-600 border-2 bg-purple-500 m-3 text-gray-200 rounded-lg text-xl"
+                  className="message flex flex-col justify-start mr-96  p-3 border-gray-600 border-2 bg-purple-500 m-3 text-gray-200 rounded-lg text-xl"
                   key={`p${mesInd}`}
                 >
                   <span className="text-base">Anonymous user says:</span>
-                  <span className="ml-20 mt-3">{messages.message}</span>
+                  <span className="ml-8 mt-3">{messages.message}</span>
                 </div>
               );
             })}
