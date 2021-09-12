@@ -11,7 +11,18 @@
   max-width: 50%
 }
 .messages{
-  max-width: 40%
+  max-width: 30%
+}
+
+@media (max-width:700px){
+  .message{
+    width:90%;
+  } 
+}
+@media (max-width:900px){
+  .messages{
+    width: 90vw;
+  }
 }
 
 @tailwind utilities;
