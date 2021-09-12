@@ -18,26 +18,15 @@ const Messages = ({ history }) => {
     window.localStorage.clear();
     history.push("/login");
   };
-  // const handleCopy = () => {
-  //     const el = document.createElement('input')
-  //     // el.value = 'https://anonymously.netlify.app/user/' + username
-  //     // el.select()
-  //     // document.execCommand('copy')
-  //     const copy = document.getElementById('linking')
-  //     // copy.textContent.select()
-  //     el.value = copy.textContent
-  //     el.select()
-  //     document.execCommand('copy')
-  //     // document.body.removeChild(el)
-  // }
+  
   return (
     <div className=" first-div flex flex-col text-gray-600 bg-purple-300 text-2xl items-center w-screen h-screen pt-16 overflow-auto overflow-x-hidden">
       <h2 className="">{username} logged in</h2>
-      <div className="mt-20 w-4/5  md:w-screen">
-       <span>
+      <div className="mt-20  md:flex-row flex flex-col">
+       <span className='text-base md:text-xl'>
          copy link to messageBox:
          </span> 
-        <span className="text-purple-700  text-base md:text-xl " to={messagePage}>
+        <span className="text-purple-700   text-base md:text-xl " to={messagePage}>
         https://anonymously.netlify.app/user/{username}
         </span>
       </div>

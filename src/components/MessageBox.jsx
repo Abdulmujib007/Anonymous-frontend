@@ -28,11 +28,11 @@ const MessageBox = ({ match,history }) => {
     history.push('/')
   }
   return (
-    <div className='h-screen w-screen bg-gray-400 flex flex-col pt-20 text-2xl pl-20 overflow-auto'>
+    <div className='h-screen w-screen bg-gray-400 flex flex-col pt-20 text-2xl pl-20 overflow-auto '>
       <p className='text-xl text-green-600'>{error}</p>
       <p className='pb-2 text-purple-800'>messageBox for {username}</p>
       <textarea
-        className= 'messages text-white bg-purple-600  h-44 outline-none text-base pl-2 border-2 border-gray-400 rounded-xl'
+        className= 'w-4/5 md:w-2/5  text-white bg-purple-600 h-44 md:h-56  outline-none text-base pl-2 border-2 border-gray-400 rounded-xl'
         value={text}
         onChange={handleText}
         cols="50"
