@@ -31,27 +31,29 @@ const Messages = ({ history }) => {
   //     // document.body.removeChild(el)
   // }
   return (
-    <div className=" first-div flex flex-col text-gray-600 bg-purple-300 text-2xl items-center w-full h-screen pt-16 overflow-auto">
+    <div className=" first-div flex flex-col text-gray-600 bg-purple-300 text-2xl items-center w-screen h-screen pt-16 overflow-auto overflow-x-hidden">
       <h2 className="">{username} logged in</h2>
-      <div className="mt-20 pl-10 flex justify-start items-start w-screen">
-        copy link to messageBox:
-        <span id='linking'className="text-purple-700" to={messagePage}>
+      <div className="mt-20 w-4/5  md:w-screen">
+       <span>
+         copy link to messageBox:
+         </span> 
+        <span className="text-purple-700  text-base md:text-xl " to={messagePage}>
         https://anonymously.netlify.app/user/{username}
         </span>
       </div>
       <p className="mt-10 w-screen flex justify-start pl-10 ">Your Messages:</p>
       <br />
-      <div className="flex flex-col w-screen pl-20">
+      <div className="page ml-10 md:ml-20 flex flex-col">
         {message.length === 0
           ? "No messages for you yet lol"
           : message.map((messages, mesInd) => {
               return (
                 <div
-                  className="message flex flex-col justify-start mr-96  p-3 border-gray-600 border-2 bg-purple-500 m-3 text-gray-200 rounded-lg text-xl"
+                  className="w-4/5 md:w-2/4 flex flex-col justify-start p-3 border-gray-600 border-2 bg-purple-500  text-gray-200 rounded-lg text-xl mb-3"
                   key={`p${mesInd}`}
                 >
-                  <span className="text-base">Anonymous user says:</span>
-                  <span className="ml-8 mt-3">{messages.message}</span>
+                  <span className="text-base">Anonymous user say:</span>
+                  <span className=" ml-2 mt-1 md:ml-8 md:mt-3">{messages.message}</span>
                 </div>
               );
             })}
