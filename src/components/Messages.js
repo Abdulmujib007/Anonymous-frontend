@@ -20,13 +20,13 @@ const Messages = ({ history }) => {
   };
   
   return (
-    <div className="message first-div flex flex-col text-gray-600 text-2xl items-center w-screen h-screen pt-16 overflow-auto overflow-x-hidden">
-      <h2 className="">{username} logged in</h2>
+    <div className="bg-black flex flex-col text-gray-300 text-2xl items-center w-screen h-screen pt-16 overflow-auto overflow-x-hidden">
+      <h2 className="text-white text-center font-mono"> Welcome, {username} </h2>
       <div className="mt-20  md:flex-row flex flex-col">
-       <span className='text-base md:text-xl'>
+       <span className='text-base md:text-2xl text-gray-300'>
          copy link to messageBox:
          </span> 
-        <span className="text-purple-700   text-base md:text-xl " to={messagePage}>
+        <span className="text-purple-700   text-base md:text-2xl " to={messagePage}>
         https://anonymously.netlify.app/user/{username}
         </span>
       </div>
@@ -38,7 +38,7 @@ const Messages = ({ history }) => {
           : message.map((messages, mesInd) => {
               return (
                 <div
-                  className="w-4/5 md:w-2/4 flex flex-col justify-start p-3 border-gray-600 border-2 bg-purple-500  text-gray-200 rounded-lg text-xl mb-3"
+                  className="w-4/5 md:w-2/4 flex flex-col justify-start p-3 border-gray-500 border-2 bg-gray-900  text-gray-200 rounded-lg text-xl mb-3"
                   key={`p${mesInd}`}
                 >
                   <span className="text-base">Anonymous user say:</span>
@@ -48,7 +48,7 @@ const Messages = ({ history }) => {
             })}
       </div>
       <button
-        className="mt-36 mb-10  rounded-lg border-purple-500 border-2 bg-gray-400 text-gray-700 outline-non p-1"
+        className="mt-20 mb-10  rounded-lg  text-red-200 outline-non "
         onClick={logOut}
       >
         Logout
