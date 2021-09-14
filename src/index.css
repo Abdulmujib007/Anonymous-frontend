@@ -2,13 +2,15 @@
 @tailwind components;
 
 
-.input-tag{
+/* .input-tag{
    @apply border-gray-600 border-2 bg-gray-300  rounded-lg text-base p-1
-     pl-1;
+     pl-1
    outline: none;   
+} */
+
+.create{
+  background-color: #ffede1c9
 }
-
-
 
 
 

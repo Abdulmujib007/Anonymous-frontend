@@ -20,7 +20,7 @@ const Messages = ({ history }) => {
   };
   
   return (
-    <div className=" first-div flex flex-col text-gray-600 bg-purple-300 text-2xl items-center w-screen h-screen pt-16 overflow-auto overflow-x-hidden">
+    <div className="message first-div flex flex-col text-gray-600 text-2xl items-center w-screen h-screen pt-16 overflow-auto overflow-x-hidden">
       <h2 className="">{username} logged in</h2>
       <div className="mt-20  md:flex-row flex flex-col">
        <span className='text-base md:text-xl'>

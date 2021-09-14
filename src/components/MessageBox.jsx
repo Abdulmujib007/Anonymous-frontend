@@ -28,7 +28,7 @@ const MessageBox = ({ match,history }) => {
     history.push('/')
   }
   return (
-    <div className='h-screen w-screen bg-gray-400 flex flex-col pt-20 text-2xl pl-20 overflow-auto '>
+    <div className=' h-screen w-screen bg-gray-400 flex flex-col pt-20 text-2xl pl-20 overflow-auto '>
       <p className='text-xl text-green-600'>{error}</p>
       <p className='pb-2 text-purple-800'>messageBox for {username}</p>
       <textarea

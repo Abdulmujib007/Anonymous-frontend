@@ -30,40 +30,46 @@ const Login = ({ history }) => {
     history.push("/");
   };
   return (
-    <div className="w-screen h-screen  bg-gray-600 flex flex-col justify-start items-center pt-20 text-2xl">
+    <div className="create w-screen h-screen flex flex-col justify-start items-center pt-20 text-2xl">
       <p>{error}</p>
+      <div className='bg-white pb-10 px-10 pt-10 mt-4 rounded-2xl text-center flex flex-col'>
       <p className="pb-3">Login to Anonymous</p>
       <form
-        className="flex rounded-lg flex-col bg-gray-400 p-12"
+        className="flex rounded-lg flex-col pt-8"
         onSubmit={handleLogin}
       >
-        username{" "}
+        
         <input
-          className="input-tag"
+          className="bg-gray-200 w-96 text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
           type="text"
+          placeholder='Enter Your Username'
           required
           value={username}
           onChange={handleUsername}
         />
         <br />
-        password{" "}
         <input
-          className="input-tag"
+          className="bg-gray-200 text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
           type="password"
           required
           value={password}
           onChange={handlePassword}
+          placeholder='Enter Your Password'
         />
-        <button className="mt-6 border-2 text-center border-white bg-purple-500 rounded-lg text-gray-800 w-40 ml-12">
-          login
+        <button className="mt-10 border-2 text-center border-white rounded-2xl text-white w-full h-12 bg-blue-400 ">
+          Login
         </button>
       </form>
+      <p className=' mt-6 text-base'> 
+        Dont't have an account?
       <button
-        className="mt-6 border-2 text-center border-white bg-purple-500 rounded-lg text-gray-800 w-50 p-1 ml-2"
+        className="border-b-2 border-blue-400  text-center  text-blue-500  p-1 ml-2"
         onClick={handleLogout}
       >
-        Create Account?
+        sign up
       </button>
+      </p>
+      </div>
     </div>
   );
 };

@@ -38,41 +38,47 @@ const Create = ({ history }) => {
   const showLogin = () => history.push("/login");
 
   return (
-    <div className="bg-purple-500 w-screen h-screen flex flex-col  items-center  gap-y-5 text-2xl pt-4">
-      <p className="text-red-400">{success}</p>
-      <h1 className="p-tag text-white text-3xl">create account</h1>
-      <form className="flex flex-col ">
-        username{" "}
+    <div className="create w-screen h-screen flex flex-col  items-center  gap-y-5 text-2xl pt-4">
+      <p className="text-center">{success}</p>
+      <div className='bg-white pb-14 px-10 pt-10 mt-10 rounded-2xl text-center flex flex-col '>
+      <h1 className="p-tag text-black text-4xl  font-medium ">create account</h1>
+      <p className='text-lg mt-2'>
+        Already have an account? 
+        <button
+        className="text-blue-500 border-b-2  outline-none  border-blue-400 ml-1"
+        onClick={showLogin}
+      >
+         Sign in
+      </button>
+      </p>
+      <form className= "flex flex-col mt-10 ">
         <input
-          className="input-tag"
+          className=" bg-gray-200 w-96 text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
           type="text"
+          placeholder='Username'
           value={username}
           onChange={handleUsername}
           required
         />{" "}
         <br />
-        password{" "}
         <input
-          className="input-tag"
+          className=" bg-gray-200 text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
           type="text"
+          placeholder='Password'
           value={password}
           onChange={handlePassword}
           required
         />{" "}
         <br />
         <button
-          className=" w-52 rounded-lg ml-6 border-white border-2 bg-purple-400 text-gray-600 outline-none"
+          className=" mt-4 w-96 h-14 rounded-2xl border-white border-2 bg-blue-400 text-white outline-none"
           onClick={handleSubmit}
         >
-          create account
+          Sign up
         </button>
       </form>
-      <button
-        className="w-auto rounded-lg border-white border-2 bg-purple-400 text-gray-600 outline-none p-1"
-        onClick={showLogin}
-      >
-        Already have an account
-      </button>
+     
+      </div>
     </div>
   );
 };
