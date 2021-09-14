@@ -48,7 +48,7 @@ const Messages = ({ history }) => {
             })}
       </div>
       <button
-        className="mt-20 mb-10  rounded-lg  text-red-200 outline-non "
+        className="mt-20 mb-10  text-3xl rounded-lg  text-red-200 outline-non "
         onClick={logOut}
       >
         Logout
