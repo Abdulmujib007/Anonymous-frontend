@@ -32,7 +32,7 @@ const Login = ({ history }) => {
   return (
     <div className="create w-screen h-screen flex flex-col justify-start items-center pt-20 text-2xl">
       <p>{error}</p>
-      <div className='bg-white pb-10 px-2 md:px-10 pt-10 mt-8 md:mt-4 rounded-2xl text-center flex flex-col'>
+      <div className='bg-white pb-10 px-1 md:px-10 pt-10 mt-8 md:mt-4 rounded-2xl text-center flex flex-col'>
       <p className="pb-3">Login to Anonymous</p>
       <form
         className="flex rounded-lg flex-col pt-8"

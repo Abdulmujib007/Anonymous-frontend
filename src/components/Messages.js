@@ -19,6 +19,7 @@ const Messages = ({ history }) => {
     history.push("/login");
   };
   
+  
   return (
     <div className="bg-black flex flex-col text-gray-300 text-2xl items-center w-screen h-screen pt-16 overflow-auto overflow-x-hidden">
       <h2 className="text-white text-center font-mono"> Welcome, {username} </h2>
@@ -48,7 +49,7 @@ const Messages = ({ history }) => {
             })}
       </div>
       <button
-        className="mt-20 mb-10  text-3xl rounded-lg  text-red-200 outline-non "
+        className="mt-10 mb-8  text-3xl rounded-lg  text-red-200 outline-non "
         onClick={logOut}
       >
         Logout

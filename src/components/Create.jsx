@@ -40,7 +40,7 @@ const Create = ({ history }) => {
   return (
     <div className="create w-screen h-screen flex flex-col  items-center  gap-y-5 text-2xl pt-4">
       <p className="text-center">{success}</p>
-      <div className='bg-white pb-14 px-2  md:px-10 pt-10 mt-14 md:mt-10 rounded-2xl text-center flex flex-col '>
+      <div className='bg-white pb-14 px-1  md:px-10 pt-10 mt-14 md:mt-10 rounded-2xl text-center flex flex-col '>
       <h1 className="p-tag text-black text-4xl  font-medium ">create account</h1>
       <p className='text-lg mt-2'>
         Already have an account? 
