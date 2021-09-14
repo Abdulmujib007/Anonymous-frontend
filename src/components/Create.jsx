@@ -40,7 +40,7 @@ const Create = ({ history }) => {
   return (
     <div className="create w-screen h-screen flex flex-col  items-center  gap-y-5 text-2xl pt-4">
       <p className="text-center">{success}</p>
-      <div className='bg-white pb-14 px-10 pt-10 mt-10 rounded-2xl text-center flex flex-col '>
+      <div className='bg-white pb-14 px-2  md:px-10 pt-10 mt-14 md:mt-10 rounded-2xl text-center flex flex-col '>
       <h1 className="p-tag text-black text-4xl  font-medium ">create account</h1>
       <p className='text-lg mt-2'>
         Already have an account? 
@@ -53,7 +53,7 @@ const Create = ({ history }) => {
       </p>
       <form className= "flex flex-col mt-10 ">
         <input
-          className=" bg-gray-200 w-96 text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
+          className=" bg-gray-200 w-4/5  md:w-96   ml-10  md:ml-0   text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
           type="text"
           placeholder='Username'
           value={username}
@@ -62,7 +62,7 @@ const Create = ({ history }) => {
         />{" "}
         <br />
         <input
-          className=" bg-gray-200 text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
+          className=" bg-gray-200 ml-10 md:ml-0 w-4/5 md:w-96  text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
           type="text"
           placeholder='Password'
           value={password}
@@ -71,7 +71,7 @@ const Create = ({ history }) => {
         />{" "}
         <br />
         <button
-          className=" mt-4 w-96 h-14 rounded-2xl border-white border-2 bg-blue-400 text-white outline-none"
+          className=" mt-4 ml-10 md:ml-0 w-4/5 md:w-96 h-14 rounded-2xl border-white border-2 bg-blue-400 text-white outline-none"
           onClick={handleSubmit}
         >
           Sign up

@@ -32,7 +32,7 @@ const Login = ({ history }) => {
   return (
     <div className="create w-screen h-screen flex flex-col justify-start items-center pt-20 text-2xl">
       <p>{error}</p>
-      <div className='bg-white pb-10 px-10 pt-10 mt-4 rounded-2xl text-center flex flex-col'>
+      <div className='bg-white pb-10 px-2 md:px-10 pt-10 mt-8 md:mt-4 rounded-2xl text-center flex flex-col'>
       <p className="pb-3">Login to Anonymous</p>
       <form
         className="flex rounded-lg flex-col pt-8"
@@ -40,7 +40,7 @@ const Login = ({ history }) => {
       >
         
         <input
-          className="bg-gray-200 w-96 text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
+          className="bg-gray-200 w-4/5 md:w-96 ml-10 md:ml-0  text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
           type="text"
           placeholder='Enter Your Username'
           required
@@ -49,14 +49,14 @@ const Login = ({ history }) => {
         />
         <br />
         <input
-          className="bg-gray-200 text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
+          className="bg-gray-200 w-4/5 md:w-96 ml-10 md:ml-0 text-xl outline-none border-2 border-gray-300 rounded-lg p-2 font-serif"
           type="password"
           required
           value={password}
           onChange={handlePassword}
           placeholder='Enter Your Password'
         />
-        <button className="mt-10 border-2 text-center border-white rounded-2xl text-white w-full h-12 bg-blue-400 ">
+        <button className="mt-10  w-4/5 md:w-96 ml-10 md:ml-0 border-2 text-center border-white rounded-2xl text-white   h-12 bg-blue-400 ">
           Login
         </button>
       </form>
